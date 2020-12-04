@@ -53,7 +53,8 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ### Confusion matrix 
 
-<image confusion matrix
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/CMbase.png)
+
 
 ---
 
