@@ -84,7 +84,8 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ---
 
-<image cinfusion matrix
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/SMOT_conf_plot.png)
+
 
 ---
 
