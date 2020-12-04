@@ -66,7 +66,8 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ---
 
-<image roc
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/SMOT_ROC.png)
+
 
 ---
 
