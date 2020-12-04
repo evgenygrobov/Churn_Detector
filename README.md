@@ -40,7 +40,7 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ### ROC_AUC score
 
-<image roc_auc score
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROC_AUC_base_score.png)
 
 ---
 
