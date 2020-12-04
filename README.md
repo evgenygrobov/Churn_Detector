@@ -17,7 +17,8 @@ I wish to perform supervised learning on a bynary classification problem to dete
 
 It is might be interesting to see some inside from the data. First, lets take a look at the ratio of the customer churn.
 
-<img Pie chart image
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/pie_chart.png)
+
 
 The ratio is not much awfull. 1:4 of left and retained customer. EDA analysis reaveled what features are among the important answering who is leaving the Bank.
 
