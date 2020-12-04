@@ -22,7 +22,7 @@ It is might be interesting to see some inside from the data. First, lets take a 
 
 The ratio is not much awfull. 1:4 of left and retained customer. EDA analysis reaveled what features are among the important answering who is leaving the Bank.
 
-<image Age|Balance
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/AGE%7CBalance.png)
 
 Products. How many leaving without having a whole spectr of bank products.
 
