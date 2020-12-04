@@ -46,7 +46,8 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ### Classification report
 
-<image class report
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/CLASSReportbase.png)
+
 
 ---
 
