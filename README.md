@@ -91,7 +91,9 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ## Conclusion
 
+A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer. A good model will also have a low level of false positives and false negatives, which indicate where the model has made mistakes. These four numbers can tell us a lot about how the model is doing and what we can do to help. Often, it’s helpful to represent them as a confusion matrix.
 
+So in summary, out of 2000 test cases, we observed (considering a “positive” result as being a churn and a “negative” one being not churn).
 
-
+It is a trade off here. Final decision after business what to prefer here either  more acccurate prediction on customers who are leaving  and save them or more accurate prediction on customer who is going to retain. 
 
