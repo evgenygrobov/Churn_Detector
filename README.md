@@ -26,7 +26,7 @@ The ratio is not much awfull. 1:4 of left and retained customer. EDA analysis re
 
 Products. How many leaving without having a whole spectr of bank products.
 
-<image BAnk products
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/NumOfProd.png)
 
 ---
 
