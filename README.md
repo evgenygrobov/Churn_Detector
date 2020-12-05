@@ -20,8 +20,17 @@ It is might be interesting to see some inside from the data. First, lets take a 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/pie_chart.png)
 
 
-The ratio is not much awfull. 1:4 of left and retained customer. EDA analysis reaveled what features are among the important answering who is leaving the Bank.
+The ratio is not much awfull. 1:4 of left and retained customer. 
 
+---
+
+We could notice that Age and Balance are the most relevant to label features among others.
+
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/correl.png)
+
+---
+
+Those customers who left the Bank were in age between 37-45
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/AGE%7CBalance.png)
 
 Products. How many leaving without having a whole spectr of bank products.
