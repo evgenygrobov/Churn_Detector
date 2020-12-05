@@ -53,7 +53,7 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ### ROC_AUC score
 
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROC_AUC_base_score.png)
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROC_allmodel.png)
 
 ---
 
