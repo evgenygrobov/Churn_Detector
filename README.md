@@ -12,6 +12,8 @@ Churn, or attrition, is a metric that measures how much business you’ve lost. 
 ## Data
 
 The data was taken here https://www.kaggle.com/mathchi/churn-for-bank-customers. It is open source public Kaggle website.
+***Target is a binary classificition labled as class 1 and class 0 for customers who left and retained in bank respectively. Predictors are: [CreditScore', 'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts','HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Exited']***
+       
 
 I wish to perform supervised learning on a bynary classification problem to determine if an existng customer is going to leave the Bank. The Customer churn dataset consists of 10000 unique observations, each labelled as loyal customer (or not exiting) (0) or one who is not loyal and leaving the bank (1). The data also contains a number of predictors (12), each of which is either a social  metrics, or a customer experience history with the Bank.
 
@@ -28,12 +30,11 @@ We could notice that Age and Balance are the most relevant to label features amo
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/correl.png)
 
----
+On the scatter plot you can see orange crosses = class 1(churn) and blue circles = class 0(retained customers).
 
-Those customers who left the Bank were in age between 37-45
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/AGE%7CBalance.png)
 
-Products. How many leaving without having a whole spectr of bank products.
+Bar plots depict the number of products distribution amongst customer class 0 and class 1.
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Custome%7CProducts.png)
 
