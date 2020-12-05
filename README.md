@@ -26,7 +26,7 @@ The ratio is not much awfull. 1:4 of left and retained customer.
 
 ---
 
-We could notice that Age and Balance are the most relevant to label features among others.
+We could notice that Age and Balance are the most relevant features to label.
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/correl.png)
 
@@ -40,9 +40,12 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ---
 
+***Breifly i could conclude that major group of customers who left the bank(40%) were middle age beetwen 36 and 52 and had account balance>$80K.***
+
+
 ## Machine learning
 
-Skewed datasets are not uncommon. And they are tough to handle. This is because if the dataset is skewed, such as in our example, a 1:4 ratio of Positives to Negatives occur. I have decided to apply resampling technics such as SMOT and setting some hyperparameters cleverly to using libraries that contain different versions of the usual algorithms which internally handle imbalance themselves. 
+---
 
 ## BaseLined machine learning.
 
@@ -68,7 +71,9 @@ Skewed datasets are not uncommon. And they are tough to handle. This is because 
 
 ---
 
-## SMOT  oversampling.
+## SMOT  oversampling
+
+Skewed datasets are not uncommon. And they are tough to handle. This is because if the dataset is skewed, such as in our example, a 1:4 ratio of Positives to Negatives occur. I have decided to apply resampling technics such as SMOT and setting some hyperparameters cleverly to using libraries that contain different versions of the usual algorithms which internally handle imbalance themselves. 
 
 ---
 
