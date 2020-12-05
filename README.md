@@ -43,13 +43,13 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 ***Breifly i could conclude that major group of customers who left the bank(40%) were middle age beetwen 36 and 52 and had account balance>$80K.***
 
 
-## Machine learning
+## Machine learning modeling
 
 Evaluating model performance can tell us if our approach is working — this turns out to be helpful.Monitoring model performance on a validation set is an excellent way to get feedback on whether what you’re doing is working. It’s also a great tool for comparing different models — ultimately, our aim is to build better, more accurate models that will help us make better decisions in real world applications.
 
 ---
 
-## BaseLined machine learning.
+## 1.Base data set
 
 ---
 
@@ -90,7 +90,7 @@ The columns of this matrix represent what our model has predicted — no custome
 
 ---
 
-## SMOT  oversampling
+## 2. Resampled(over) data set.(SMOT)
 
 Skewed datasets are not uncommon. And they are tough to handle. This is because if the dataset is skewed, such as in our example, a 1:4 ratio of Positives to Negatives occur. I have decided to apply resampling technics such as SMOT and setting some hyperparameters cleverly to using libraries that contain different versions of the usual algorithms which internally handle imbalance themselves. 
 
