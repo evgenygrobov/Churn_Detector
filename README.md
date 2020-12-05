@@ -45,6 +45,8 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ## Machine learning
 
+Evaluating model performance can tell us if our approach is working — this turns out to be helpful.Monitoring model performance on a validation set is an excellent way to get feedback on whether what you’re doing is working. It’s also a great tool for comparing different models — ultimately, our aim is to build better, more accurate models that will help us make better decisions in real world applications.
+
 ---
 
 ## BaseLined machine learning.
@@ -57,6 +59,8 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ---
 
+**Precision-Recall is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.**
+
 ### Classification report
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/CLASSReportbase.png)
@@ -64,10 +68,25 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ---
 
-### Confusion matrix 
+**A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer. A good model will also have a low level of false positives and false negatives, which indicate where the model has made mistakes. These four numbers can tell us a lot about how the model is doing and what we can do to help. Often, it’s helpful to represent them as a confusion matrix.**
+
+### Best result: XGBC model confusion matrix.
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/CMbase.png)
 
+---
+
+The columns of this matrix represent what our model has predicted — no customer churn on the left and customer churn on the right. The rows represent what each instance that the model predicted actually was — no customer churn on the top and customer churn on the bottom. The number in each position tells us the number of each situation that was observed when comparing our predictions to the actual results.
+
+---
+
+## Summary for base(imbalanced) data set:
+
+*** So in summary, out of 2000 test cases, we observed(considering a “positive” result as being a churn and a “negative” one being not churn ):
+- 276 predicted customers will left the bank, that were actually left (TPs);
+- 117 predicted retain with the bank that were actually exiting (FNs);
+- 266 predicted left that were actually not (FPs); and
+- 1341 predicted retain that were actually retain (TNs).
 
 ---
 
