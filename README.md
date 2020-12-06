@@ -1,4 +1,5 @@
-# Customer churn out prediction
+# Prediction of customer churn
+### (imbalanced data supervised machine learning modeling on binary classification target) 
 
 ---
 
