@@ -83,7 +83,7 @@ The columns of this matrix represent what our model has predicted — no custome
 
 ## Summary for base(imbalanced) data set:
 
-*** So in summary, out of 2000 test cases, we observed(considering a “positive” result as being a churn and a “negative” one being not churn ):
+So in summary, out of 2000 test cases, we observed(considering a “positive” result as being a churn and a “negative” one being not churn ):
 - 276 predicted customers will left the bank, that were actually left (TPs);
 - 117 predicted retain with the bank that were actually exiting (FNs);
 - 266 predicted left that were actually not (FPs); and
