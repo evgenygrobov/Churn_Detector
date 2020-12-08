@@ -93,8 +93,7 @@ As in the previous section, the naive approach to finding the optimal threshold 
 
 ### Classification report
 
-![]()
-
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/class_report.png)
 
 ---
 
