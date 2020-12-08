@@ -65,6 +65,17 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 ***Optimal Threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds
 
 
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbest.png)
+
+
+One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
+
+![]()
+
+
+We can see that the point for the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.
+
+
 
 
 **Precision-Recall is a useful measure of success of prediction when the classes are imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.**
