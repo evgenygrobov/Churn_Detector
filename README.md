@@ -55,13 +55,19 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 ---
 
-### ROC_AUC score
+***ROC_AUC_score*** (it turns out Logistic Regression, K-neighbor and Decision Tree models are doing a poor job by misclassifying label)
+
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROC_allmodel.png)
 
 ---
 
-**Precision-Recall is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.**
+***Optimal Threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds
+
+
+
+
+**Precision-Recall is a useful measure of success of prediction when the classes are imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.**
 
 ### Classification report
 
