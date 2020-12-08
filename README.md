@@ -1,5 +1,5 @@
 # Prediction of customer churn
-### (supervised tree based machine learning modeling on binary classification target) 
+### (supervised  machine learning modeling on binary classification target) 
 
 ---
 
@@ -16,7 +16,7 @@ The data was taken here https://www.kaggle.com/mathchi/churn-for-bank-customers.
 ***Target is a binary classificition labled as class 1 and class 0 for customers who left and retained in bank respectively. Predictors are: [CreditScore', 'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts','HasCrCard', 'IsActiveMember', 'EstimatedSalary', 'Exited']***
        
 
-I wish to perform supervised learning on a bynary classification problem to determine if an existng customer is going to leave the Bank. The Customer churn dataset consists of 10000 unique observations, each labelled as loyal customer (or not exiting) (0) or one who is not loyal and leaving the bank (1). The data also contains a number of predictors (12), each of which is either a social  metrics, or a customer experience history with the Bank.
+I wish to perform supervised learning on a bynary classification problem to determine if an existng customer is going to leave the Bank. The Customer churn dataset consists of 10000 unique observations, each labeled as loyal customer (or not exiting) (0) or one who is not loyal and leaving the bank (1). The data also contains a number of predictors (12), each of which is either a social  metrics, or a customer experience history with the Bank.
 
 It is might be interesting to see some inside from the data. First, lets take a look at the ratio of the customer churn.
 
@@ -105,11 +105,8 @@ Now I can tune models hypermaremters to adjust defualt decision boundary when ap
 
 A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer.
 The target of the project is to predict customer churn from the bank, espessialy for ***class 1*** labeled customers. 
-The models obviousely learnt how to disitinguish classes and detect churn. If i would be the owner of the project I will pick model that yields better balance between TP and TN ***class1*** . 
-- 251 predicted customers will left the bank, that were actually left (TPs);
-- 142 predicted retain with the bank that were actually exiting (FNs);
-- 158 predicted left that were actually not (FPs); and
-- 1449 predicted retain that were actually retain (TNs).
+The models obviousely learnt how to disitinguish between classes and detect churn. If i would be the owner of the project I will pick model that yields better balance between TP and TN ***class1*** . 
+
 
 P.S. Final decision is after business what trade off to prefer either higher TPs or TNs.
 
