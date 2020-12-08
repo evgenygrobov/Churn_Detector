@@ -62,7 +62,7 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 ---
 
-***Optimal Threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds
+***Threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds
 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbest.png)
@@ -87,25 +87,20 @@ As in the previous section, the naive approach to finding the optimal threshold 
 ---
 
 
+***Threshold setting and tunning***
 
-
-
-
-
-**Precision-Recall is a useful measure of success of prediction when the classes are imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.**
+---
 
 ### Classification report
 
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/CLASSReportbase.png)
+![]()
 
 
 ---
 
-**A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer. A good model will also have a low level of false positives and false negatives, which indicate where the model has made mistakes. These four numbers can tell us a lot about how the model is doing and what we can do to help. Often, it’s helpful to represent them as a confusion matrix.**
+***Models prediction***
 
-### Best result: XGBC model confusion matrix.
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/CMbase.png)
+![]()
 
 
 ---
