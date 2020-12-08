@@ -58,28 +58,32 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 ---
 
-***Threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds
+***Optimal threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds. One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbest.png)
 
 
-One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
+## Lets zoom it up!
+
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbestzoom.png)
 
 
-***We can see that the point for the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.***
+***We can see the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.***
+
 
 ***Optimal Threshold for Precision-Recall Curve***
 Unlike the ROC Curve, a precision-recall curve focuses on the performance of a classifier on the positive (minority class) only. Precision is the ratio of the number of true positives divided by the sum of the true positives and false positives. It describes how good a model is at predicting the positive class. Recall is calculated as the ratio of the number of true positives divided by the sum of the true positives and the false negatives. Recall is the same as sensitivity.
-As in the previous section, the naive approach to finding the optimal threshold would be to calculate the F-measure for each threshold. We can achieve the same effect by converting the precision and recall measures to F-measure directly; for example:
+The naive approach to finding the optimal threshold would be to calculate the F-score for each threshold. 
+
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/F-score.png)
 
 ---
 
-***Threshold setting and tunning***
+## Threshold setting and tunning
+Now I can tune models hypermaremters to adjust defualt decision boundary when appropriate.
 
 ---
 
@@ -89,7 +93,8 @@ As in the previous section, the naive approach to finding the optimal threshold 
 
 ---
 
-***Models prediction***
+***Confusion matrix***
+
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Models%20prediction.png)
 
@@ -98,12 +103,13 @@ As in the previous section, the naive approach to finding the optimal threshold 
 
 ## Conclusion
 
-A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer. - 276 predicted customers will left the bank, that were actually left (TPs);
-- 117 predicted retain with the bank that were actually exiting (FNs);
-- 266 predicted left that were actually not (FPs); and
-- 1341 predicted retain that were actually retain (TNs).
+A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer.
+The target of the project is to predict customer churn from the bank, espessialy for ***class 1*** labeled customers. 
+The models obviousely learnt how to disitinguish classes and detect churn. If i would be the owner of the project I will pick model that yields better balance between TP and TN ***class1*** . 
+- 251 predicted customers will left the bank, that were actually left (TPs);
+- 142 predicted retain with the bank that were actually exiting (FNs);
+- 158 predicted left that were actually not (FPs); and
+- 1449 predicted retain that were actually retain (TNs).
 
-So in summary, out of 2000 test cases, we observed (considering a “positive” result as being a churn and a “negative” one being not churn).
-
-It is a trade off here. Final decision after business what to prefer here either  more acccurate prediction on customers who are leaving  and save them or more accurate prediction on customer who is going to retain. 
+P.S. Final decision is after business what trade off to prefer either higher TPs or TNs.
 
