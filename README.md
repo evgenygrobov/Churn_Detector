@@ -81,7 +81,7 @@ We can see that the point for the optimal threshold is a large black dot and it 
 Unlike the ROC Curve, a precision-recall curve focuses on the performance of a classifier on the positive (minority class) only. Precision is the ratio of the number of true positives divided by the sum of the true positives and false positives. It describes how good a model is at predicting the positive class. Recall is calculated as the ratio of the number of true positives divided by the sum of the true positives and the false negatives. Recall is the same as sensitivity.
 As in the previous section, the naive approach to finding the optimal threshold would be to calculate the F-measure for each threshold. We can achieve the same effect by converting the precision and recall measures to F-measure directly; for example:
 
-![]()
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/F-score.png)
 
 
 ---
