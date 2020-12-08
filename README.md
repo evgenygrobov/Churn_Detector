@@ -46,7 +46,8 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ## Machine learning modeling
 
-Evaluating model performance can tell us if our approach is working — this turns out to be helpful.Monitoring model performance on a validation set is an excellent way to get feedback on whether what you’re doing is working. It’s also a great tool for comparing different models — ultimately, our aim is to build better, more accurate models that will help us make better decisions in real world applications.
+Evaluating model performance can tell us if our approach is working. Two diagnostic tools that help in the interpretation of probabilistic forecast for binary (two-class) classification predictive modeling problems are ROC Curves and Precision-Recall curves.
+I will use repeated cross-validation to evaluate the models, with three repeats of 10-fold cross-validation. The mode performance will be reported using the mean ROC area under curve (ROC AUC) averaged over repeats and all folds.
 
 ---
 
