@@ -70,7 +70,7 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
 
-![]()
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbestzoom.png)
 
 
 We can see that the point for the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.
