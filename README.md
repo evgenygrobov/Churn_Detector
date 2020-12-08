@@ -23,11 +23,11 @@ It is might be interesting to see some inside from the data. First, lets take a 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/pie_chart.png)
 
 
-The ratio is not much awfull. 1:4 of left and retained customer. 
+***The ratio is not much awfull. 1:4 of left and retained customer.***
 
 ---
 
-We could notice that Age and Balance are the most relevant features to label.
+**We could notice that Age and Balance are the most relevant features to label.**
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/correl.png)
 
@@ -51,10 +51,6 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 ---
 
-## 1.Base data set
-
----
-
 ***ROC_AUC_score*** (it turns out Logistic Regression, K-neighbor and Decision Tree models are doing a poor job by misclassifying label)
 
 
@@ -73,9 +69,7 @@ One approach would be to test the model with each threshold returned from the ca
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbestzoom.png)
 
 
-We can see that the point for the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.
-
-
+***We can see that the point for the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.***
 
 ***Optimal Threshold for Precision-Recall Curve***
 Unlike the ROC Curve, a precision-recall curve focuses on the performance of a classifier on the positive (minority class) only. Precision is the ratio of the number of true positives divided by the sum of the true positives and false positives. It describes how good a model is at predicting the positive class. Recall is calculated as the ratio of the number of true positives divided by the sum of the true positives and the false negatives. Recall is the same as sensitivity.
@@ -83,9 +77,7 @@ As in the previous section, the naive approach to finding the optimal threshold 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/F-score.png)
 
-
 ---
-
 
 ***Threshold setting and tunning***
 
@@ -99,7 +91,7 @@ As in the previous section, the naive approach to finding the optimal threshold 
 
 ***Models prediction***
 
-![]()
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Models%20prediction.png)
 
 
 ---
