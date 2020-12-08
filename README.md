@@ -1,5 +1,5 @@
 # Prediction of customer churn
-### (imbalanced data supervised tree based machine learning modeling on binary classification target) 
+### (supervised tree based machine learning modeling on binary classification target) 
 
 ---
 
