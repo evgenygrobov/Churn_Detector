@@ -58,7 +58,8 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 ---
 
-***Optimal threshold for ROC Curve***. The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds. One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
+***Optimal threshold for ROC Curve***. 
+The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds. One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbest.png)
@@ -82,10 +83,9 @@ The naive approach to finding the optimal threshold would be to calculate the F-
 
 ---
 
-## Threshold setting and tunning
-Now I can tune models hypermaremters to adjust defualt decision boundary when appropriate.
+***Threshold setting and tunning***(Now I can tune models hypermaremters to adjust default decision boundary when appropriate.)
 
----
+--- 
 
 ### Classification report
 
@@ -93,7 +93,7 @@ Now I can tune models hypermaremters to adjust defualt decision boundary when ap
 
 ---
 
-***Confusion matrix***
+### Confusion matrix
 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Models%20prediction.png)
@@ -108,5 +108,5 @@ The target of the project is to predict customer churn from the bank, espessialy
 The models obviousely learnt how to disitinguish between classes and detect churn. If i would be the owner of the project I will pick model that yields better balance between TP and TN ***class1*** . 
 
 
-P.S. Final decision is after business what trade off to prefer either higher TPs or TNs.
+P.S. Of cause the final decision is after business what trade off between TPs,TNs to pick and which model meets the goals the best.
 
