@@ -51,13 +51,6 @@ I will use repeated cross-validation to evaluate the models, with three repeats 
 
 ---
 
-***ROC_AUC_score*** (it turns out Logistic Regression, K-neighbor and Decision Tree models are doing a poor job by misclassifying label)
-
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROC_allmodel.png)
-
----
-
 ***Optimal threshold for ROC Curve***. 
 The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds. One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
 
@@ -85,18 +78,13 @@ The naive approach to finding the optimal threshold would be to calculate the F-
 
 ***Threshold setting and tunning***(Now I can tune models hypermaremters to adjust default decision boundary when appropriate.)
 
---- 
-
-### Classification report
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/class_report.png)
 
 ---
 
 ### Confusion matrix
 
 
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Models%20prediction.png)
+![]()
 
 
 ---
