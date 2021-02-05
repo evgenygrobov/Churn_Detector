@@ -27,7 +27,7 @@ It is might be interesting to see some inside from the data. First, lets take a 
 
 ---
 
-**We could notice that Age and Balance are the most relevant features to label.**
+**We can observe Age, Balance and IsActiveMember corespond to the target label.**
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/correl.png)
 
@@ -41,10 +41,11 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ---
 
-***Breifly i could conclude that major group of customers who left the bank(40%) were middle age beetwen 36 and 52 and had account balance>$80K.***
-
-
 ## Machine learning modeling
+
+### Choosing model to perform churn prediction.
+
+![]()
 
 Evaluating model performance can tell us if our approach is working. Two diagnostic tools that help in the interpretation of probabilistic forecast for binary (two-class) classification predictive modeling problems are ROC Curves and Precision-Recall curves.
 I will use repeated cross-validation to evaluate the models, with three repeats of 10-fold cross-validation. The mode performance will be reported using the mean ROC area under curve (ROC AUC) averaged over repeats and all folds.
