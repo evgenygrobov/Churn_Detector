@@ -44,22 +44,40 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 ## Machine learning modeling
 
 ### Choosing model to perform churn prediction.
+Evaluating model performance can tell us if our approach is working. TWo diagnistic tools that help in interpretation of probabolistic forecast for binary
+classification predictive mideling problems are ROC curves and Precision Recall scores.
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/AllModelsROC.png)
 
 ---
 
-Random Forest algorith yielded higher accurancy and roc_auc score. Looks like RF is a good condidate to predict churn.
+Random Forest algorith yielded higher accurancy and roc_auc score amongst other models. Looks like RF is a good candidate to predict churn.
 
-Lets plot confison matrix to take a look at model perfomance on test susbset.
+Lets first plot the confusion matrix to take a look at model perfomance.
 
-![]()
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/MatrixBefore.png)
+
 
 ---
 
+Sensitivity=TP/TP+FN, Specificit=1-FP/TN
 
-Evaluating model performance can tell us if our approach is working. Two diagnostic tools that help in the interpretation of probabilistic forecast for binary (two-class) classification predictive modeling problems are ROC Curves and Precision-Recall curves.
-I will use repeated cross-validation to evaluate the models, with three repeats of 10-fold cross-validation. The mode performance will be reported using the mean ROC area under curve (ROC AUC) averaged over repeats and all folds.
+Sensitivity=82.4%, Specificity=97.9%. That is great, however we see some classes were missclassified as False Negative.
+
+Were Missed= 245/386=63.4%, Total error=275/1875=14.6%. This is not well. 
+
+
+Since we mostly interested in label 1 predicition which is actuall churn, we should scrutiny on the Precision and Recall.
+
+Precision = TP/TP + FP, whereas  Recall= TP/FN + TP.
+
+Precision = 82.4%, Recall = 36.5%
+
+In this scenario, I build Customer Churn Detector where positive class is churn. I needed to decide how to oprimize the model perfomance this is because false positive(loyal clients that are flagged as possible churn) are more acceptible than false negative(churn not detected).
+
+Lets see Precision_Recall curve 
+
+![]()
 
 ---
 
@@ -97,6 +115,8 @@ The naive approach to finding the optimal threshold would be to calculate the F-
 
 
 ![]()
+
+
 
 
 ---
