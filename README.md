@@ -18,6 +18,8 @@ The data was taken here https://www.kaggle.com/mathchi/churn-for-bank-customers.
 
 I wish to perform supervised learning on a bynary classification problem to determine if an existng customer is going to leave the Bank. The Customer churn dataset consists of 10000 unique observations, each labeled as loyal customer (or not exiting) (0) or one who is not loyal and leaving the bank (1). The data also contains a number of predictors (12), each of which is either a social  metrics, or a customer experience history with the Bank.
 
+### EDA
+
 It is might be interesting to see some inside from the data. First, lets take a look at the ratio of the customer churn.
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/pie_chart.png)
@@ -32,26 +34,25 @@ It is might be interesting to see some inside from the data. First, lets take a 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/correl.png)
 
 On the scatter plot you can see orange crosses = class 1(churn) and blue circles = class 0(retained customers).
+And the box plots on the right. 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/AGE%7CBalance.png)
 
-Bar plots depict the number of products distribution amongst customer class 0 and class 1.
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Custome%7CProducts.png)
+Box plots depict the Age and Balance  distribution amongst customer class 0 and class 1.
 
 ---
 
 ## Machine learning modeling
 
 ### Choosing model to perform churn prediction.
-Evaluating model performance can tell us if our approach is working. TWo diagnistic tools that help in interpretation of probabolistic forecast for binary
+Evaluating model performance can tell us if our approach is working. Two diagnistic tools that help in interpretation of probabolistic forecast for binary
 classification predictive mideling problems are ROC curves and Precision Recall scores.
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/AllModelsROC.png)
 
 ---
 
-Random Forest algorith yielded higher accurancy and roc_auc score amongst other models. Looks like RF is a good candidate to predict churn.
+Random Forest yielded higher accurancy, precision/recall and roc_auc score amongst other models. Looks like RF is a good candidate to predict churn.
 
 Lets first plot the confusion matrix to take a look at model perfomance.
 
@@ -73,7 +74,7 @@ Precision = TP/TP + FP, whereas  Recall= TP/FN + TP.
 
 Precision = 82.4%, Recall = 36.5%
 
-In this scenario, I build Customer Churn Detector where positive class is churn. I needed to decide how to oprimize the model perfomance this is because false positive(loyal clients that are flagged as possible churn) are more acceptible than false negative(churn not detected).
+A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer.
 
 Lets see Precision_Recall curve 
 
@@ -85,16 +86,14 @@ We know that class labels are imbalanced with the ratio 1:4. I need to set optim
 I can set the new deciaion with the RF roba_predict() method.
 
 
-![]()
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/MatrixAfter.png)
 
+Now we see neither errors, nor missed customers.
 
 ---
 ## Conclusion
 
-A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer.
-The target of the project is to predict customer churn from the bank, espessialy for ***class 1*** labeled customers. 
-The models obviousely learnt how to disitinguish between classes and detect churn. If i would be the owner of the project I will pick model that yields better balance between TP and TN ***class1*** . 
-
-
-P.S. Of cause the final decision is after business what trade off between TPs,TNs to pick and which model meets the goals the best.
+The target of the project is to build Customer Churn Detector and predict probability of churn. 
+In this scenario, I needed to decide how to oprimize the model perfomance, this is because false positive(loyal clients that are flagged as possible churn) are more acceptible than false negative(churn not detected). Random Forest is very powerfil tool with banch of hyperparameters to tune.
+There are may be many other scenarios, with more compliated goals. The final decision of how model should be optimized is after businesses, of cuase.
 
