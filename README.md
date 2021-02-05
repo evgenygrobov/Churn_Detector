@@ -82,8 +82,8 @@ Lets see Precision_Recall curve
 
 ---
 
-We know that class labels are imbalanced with the ratio 1:4. I need to set optimal decision boundary to keep RF from missclassifying labels.
-I can set the new deciaion with the RF roba_predict() method.
+We know that class labels are imbalanced with the ratio 1:4. I need to set optimal decision threshold to keep RF from missclassifying labels.
+I can set the new decision threshold with the RF roba_predict() method.
 
 
 ![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/MatrixAfter.png)
@@ -95,5 +95,5 @@ Now we see neither errors, nor missed customers.
 
 The target of the project is to build Customer Churn Detector and predict probability of churn. 
 In this scenario, I needed to decide how to oprimize the model perfomance, this is because false positive(loyal clients that are flagged as possible churn) are more acceptible than false negative(churn not detected). Random Forest is very powerfil tool with banch of hyperparameters to tune.
-There are may be many other scenarios, with more compliated goals. The final decision of how model should be optimized is after businesses, of cuase.
+There are may be many other scenarios, with more compliated goals. The final decision of how model should be optimized is after businesses, of cause.
 
