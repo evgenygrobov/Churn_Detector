@@ -49,6 +49,15 @@ Bar plots depict the number of products distribution amongst customer class 0 an
 
 ---
 
+Random Forest algorith yielded higher accurancy and roc_auc score. Looks like RF is a good condidate to predict churn.
+
+Lets plot confison matrix to take a look at model perfomance on test susbset.
+
+![]()
+
+---
+
+
 Evaluating model performance can tell us if our approach is working. Two diagnostic tools that help in the interpretation of probabilistic forecast for binary (two-class) classification predictive modeling problems are ROC Curves and Precision-Recall curves.
 I will use repeated cross-validation to evaluate the models, with three repeats of 10-fold cross-validation. The mode performance will be reported using the mean ROC area under curve (ROC AUC) averaged over repeats and all folds.
 
