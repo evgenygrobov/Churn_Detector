@@ -77,50 +77,18 @@ In this scenario, I build Customer Churn Detector where positive class is churn.
 
 Lets see Precision_Recall curve 
 
-![]()
+![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/Threshold_Prec_Recall.png)
 
 ---
 
-***Optimal threshold for ROC Curve***. 
-The curve is useful to understand the trade-off in the true-positive rate and false-positive rate for different thresholds. One approach would be to test the model with each threshold returned from the call roc_auc_score() and select the threshold with the largest G-Mean value. Given that we have already calculated the Sensitivity (TPR) and the complement to the Specificity when we calculated the ROC Curve, I can calculate the G-Mean for each threshold directly: ***gmeans = sqrt(tpr * (1-fpr))***
-
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbest.png)
-
-
-## Lets zoom it up!
-
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/ROCbestzoom.png)
-
-
-***We can see the optimal threshold is a large black dot and it appears to be closest to the top-left of the plot.***
-
-
-***Optimal Threshold for Precision-Recall Curve***
-Unlike the ROC Curve, a precision-recall curve focuses on the performance of a classifier on the positive (minority class) only. Precision is the ratio of the number of true positives divided by the sum of the true positives and false positives. It describes how good a model is at predicting the positive class. Recall is calculated as the ratio of the number of true positives divided by the sum of the true positives and the false negatives. Recall is the same as sensitivity.
-The naive approach to finding the optimal threshold would be to calculate the F-score for each threshold. 
-
-
-![](https://github.com/evgenygrobov/Customer-churn-prediction/blob/main/images/F-score.png)
-
----
-
-***Threshold setting and tunning***(Now I can tune models hypermaremters to adjust default decision boundary when appropriate.)
-
-
----
-
-### Confusion matrix
+We know that class labels are imbalanced with the ratio 1:4. I need to set optimal decision boundary to keep RF from missclassifying labels.
+I can set the new deciaion with the RF roba_predict() method.
 
 
 ![]()
 
 
-
-
 ---
-
 ## Conclusion
 
 A good model will have a high level of true positive and true negatives, because these results indicate where the model has got the right answer.
