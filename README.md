@@ -1,4 +1,4 @@
-# Prediction of customer churn
+# Churn Detector
 ### (supervised  machine learning modeling on binary classification target) 
 
 ---
